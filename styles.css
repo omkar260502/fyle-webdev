@@ -248,3 +248,67 @@ select {
 .search-container {
     position: relative;
 }
+
+.repo-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.skill-button {
+    background-color: #4c2885;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    margin-right: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.skill-button:hover {
+    background-color: #2a2a72;
+}
+
+.repo-link.view-repo {
+    background-color: #2a2a72;
+}
+
+.repo-link.view-repo:hover {
+    background-color: #1c1c4c; 
+}
+
+.repo-link {
+    background-color:  #2a2a72;
+    border-radius: 5px;
+    color: white;
+    display: inline-block;
+    font-size: 0.8rem;
+    padding: 0.25rem 0.5rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.repo-link:hover {
+    background-color: #2a2a72;
+}
+
+.loader {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none; /* Initially hide the loader */
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
