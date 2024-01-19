@@ -187,4 +187,4 @@ const formSubmit = () => {
 
 getUser("omkar260502", currentPage);
 
-searchBox.addEventListener("focusout", formSubmit);
+// searchBox.addEventListener("focusout", formSubmit);
